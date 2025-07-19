@@ -1,11 +1,13 @@
 import streamlit as st
 import pickle
 import numpy as np 
+import os
 
 def load_model():
-    with open('xgboost_model.pkl','rb') as file:
-        data = pickle.load(file)
-    return data
+    model_path = os.path.join(os.path.dirname(__file__), 'xgboost_model.pkl')
+    with open(model_path, 'rb') as file:
+        model = pickle.load(file)
+    return model
 data = load_model()
 
 regressor_loaded = data['model']
