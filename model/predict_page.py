@@ -4,8 +4,16 @@ import numpy as np
 import os
 
 def load_model():
-    with open('xgboost_model.pkl','rb') as file:
+    # Get the directory where this script is located
+    current_dir = os.path.dirname(__file__)
+    
+    # Construct the full path to the model file
+    model_path = os.path.join(current_dir, 'xgboost_model.pkl')
+    
+    # Load the model
+    with open(model_path, 'rb') as file:
         data = pickle.load(file)
+        
     return data
 data = load_model()
 
