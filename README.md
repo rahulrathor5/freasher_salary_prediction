@@ -35,15 +35,6 @@ These models works very well with respect to regression problems.
 6. streamlit 0.61.0
 7. plotly 4.4.1
 
-INCLUSION OF **SCREENSHOT** IS MUST FOR FRONT END DESIGNERS AND UI/UX DESIGNERS.
-
-![Getting Started](s1.png)
-![Getting Started](s2.png)
-![Getting Started](s3.png)
-![Getting Started](s4.png)
-![Getting Started](s5.png)
-![Getting Started](s6.png)
-
 
 **CONCLUSION**
 Accuracy of Machine learning Models **before** applying hyperparameter optimization.
